@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{1690079A-E21E-41A4-885E-4CC16205A13E}</ProjectGuid>
+        <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <OutputType>Library</OutputType>
+        <RootNamespace>Demo.Android</RootNamespace>
+        <AssemblyName>Demo.Android</AssemblyName>
+        <AndroidApplication>True</AndroidApplication>
+        <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+        <AndroidResgenClass>Resource</AndroidResgenClass>
+        <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+        <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+        <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+        <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+        <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug</OutputPath>
+        <DefineConstants>DEBUG;</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <AndroidLinkMode>None</AndroidLinkMode>
+        <AndroidSupportedAbis>armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release</OutputPath>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <AndroidManagedSymbols>true</AndroidManagedSymbols>
+        <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+        <MandroidI18n></MandroidI18n>
+        <AndroidSigningKeyAlias></AndroidSigningKeyAlias>
+        <AndroidSupportedAbis>armeabi-v7a;arm64-v8a</AndroidSupportedAbis>
+        <AndroidSupportedAbis>armeabi-v7a;arm64-v8a</AndroidSupportedAbis>
+        <MandroidI18n></MandroidI18n>
+        <AndroidSigningKeyAlias></AndroidSigningKeyAlias>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Mono.Android" />
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Xml.Linq" />
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Xamarin.Android.Support.Animated.Vector.Drawable" Version="28.0.0.3" />
+        <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView" Version="28.0.0.3" />
+        <PackageReference Include="Xamarin.Android.Support.Vector.Drawable" Version="28.0.0.3" />
+        <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+        <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
+        <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />
+        <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.3" />
+        <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0.3" />
+        <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0.3" />
+        <PackageReference Include="Xamarin.AndroidX.MediaRouter">
+          <Version>1.2.3</Version>
+        </PackageReference>
+        <PackageReference Include="Xamarin.AndroidX.Palette">
+          <Version>1.0.0.7</Version>
+        </PackageReference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="MainActivity.cs" />
+        <Compile Include="Resources\Resource.Designer.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="Resources\AboutResources.txt" />
+        <None Include="Assets\AboutAssets.txt" />
+        <None Include="Properties\AndroidManifest.xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <AndroidResource Include="Resources\layout\Tabbar.axml" />
+        <AndroidResource Include="Resources\layout\Toolbar.axml" />
+        <AndroidResource Include="Resources\values\styles.xml" />
+        <AndroidResource Include="Resources\values\colors.xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Demo\Demo.csproj">
+            <Project>{EF8B6740-66EA-48DD-B7FE-B6B8102A2DAF}</Project>
+            <Name>Demo</Name>
+        </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>
