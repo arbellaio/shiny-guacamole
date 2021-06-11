@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xPZn1re81mfTfJhM2oekQ/p4VUbfaZ5OD8ufymgJa7yiPtHjYopbhu/tjNplGGu9w0rdIlqF2lst5faIsHMPqQ==",
+  "success": true,
+  "projectFilePath": "/Users/faizanaamer/Projects/TestApps/Clubbable/shiny-guacamole/Demo.iOS/Demo.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/faizanaamer/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

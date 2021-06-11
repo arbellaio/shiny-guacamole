@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/faizanaamer/Projects/TestApps/Clubbable/shiny-guacamole/Demo.Test/Demo.Test.csproj": {}
+  },
+  "projects": {
+    "/Users/faizanaamer/Projects/TestApps/Clubbable/shiny-guacamole/Demo.Test/Demo.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/faizanaamer/Projects/TestApps/Clubbable/shiny-guacamole/Demo.Test/Demo.Test.csproj",
+        "projectName": "Demo.Test",
+        "projectPath": "/Users/faizanaamer/Projects/TestApps/Clubbable/shiny-guacamole/Demo.Test/Demo.Test.csproj",
+        "packagesPath": "/Users/faizanaamer/.nuget/packages/",
+        "outputPath": "/Users/faizanaamer/Projects/TestApps/Clubbable/shiny-guacamole/Demo.Test/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/faizanaamer/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[2.6.4, )"
+            },
+            "Xamarin.UITest": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
